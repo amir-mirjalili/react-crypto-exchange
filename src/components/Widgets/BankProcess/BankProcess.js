@@ -52,7 +52,7 @@ const BankProcess = memo(() => {
       <div className='box-title box-vertical-padding box-horizontal-padding no-select'>
         <div className='flex flex-center flex-space-between'>
           <div>
-            <p>Yatır-çek</p>
+            <p>Deposit/Withdraw</p>
           </div>
           <ul>
             <li>
@@ -61,7 +61,7 @@ const BankProcess = memo(() => {
                 className={tab === 0 ? 'active' : 'passive'}
                 onClick={() => setTab(0)}
               >
-                Yatır
+                Deposit
               </button>
             </li>
             <li>
@@ -70,7 +70,7 @@ const BankProcess = memo(() => {
                 className={tab === 1 ? 'active' : 'passive'}
                 onClick={() => setTab(1)}
               >
-                Çek
+                Withdraw
               </button>
             </li>
           </ul>
@@ -82,7 +82,7 @@ const BankProcess = memo(() => {
             <div className='form-elements'>
               <div className='form-line'>
                 <div className='full-width'>
-                  <label htmlFor='view'>Banka bilgilerini görüntüle</label>
+                  <label htmlFor='view'>View Bank Details</label>
                   <select name='view' id='view' onChange={handleViewOnChange}>
                     {bankDetails &&
                       bankDetails.map((item) => (
@@ -124,8 +124,8 @@ const BankProcess = memo(() => {
             <div className='form-elements'>
               <div className='form-line'>
                 <div className='full-width'>
-                  <label htmlFor='iban'>IBAN ekle</label>
-                  <input type='text' name='iban' id='iban' placeholder='IBAN numarası giriniz' />
+                  <label htmlFor='iban'>Add IBAN</label>
+                  <input type='text' name='iban' id='iban' placeholder='Enter IBAN number' />
                 </div>
               </div>
             </div>
@@ -135,9 +135,9 @@ const BankProcess = memo(() => {
             <div className='form-elements'>
               <div className='form-line'>
                 <div className='full-width'>
-                  <label htmlFor='view'>Kayıtlı IBANlarım</label>
+                  <label htmlFor='view'>My Saved IBANs</label>
                   <select name='view' id='view'>
-                    <option value='ZB'>Ziraat Bankası</option>
+                    <option value='ZB'>Ziraat Bank</option>
                   </select>
                 </div>
               </div>
@@ -149,13 +149,13 @@ const BankProcess = memo(() => {
               <strong>TR00 0000 0000 0000 0000 0000 00</strong>
             </p>
             <p>
-              <span>Çekilecek tutar : </span>
+              <span>Amount to be withdrawn: </span>
               <strong>2376.00 TL</strong>
             </p>
           </div>
 
           <button type='button' className='button button-purple button-medium button-block'>
-            Para çek
+            Withdraw Money
           </button>
         </div>
       )}

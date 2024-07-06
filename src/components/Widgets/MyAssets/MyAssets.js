@@ -114,12 +114,9 @@ const MyAssets = memo(() => {
     <Box>
       <div className='box-title box-vertical-padding box-horizontal-padding no-select'>
         <div className='flex flex-center flex-space-between'>
-          <p>Kripto değerlerim</p>
+          <p>My Crypto Assets</p>
           <div>
-            <Link to='/' type='button' className='button button-purple button-small'>
-              Kripto al
-            </Link>
-            <button type='button' className='box-icon pointer' onClick={() => handleMenuOpen()}>
+            <button type='button' className='box-icon pointer' onClick={handleMenuOpen}>
               <i className='material-icons'>more_vert</i>
             </button>
 

@@ -2,12 +2,10 @@ import { useState, useEffect } from 'react';
 
 import SiteLayout from '../../layouts/SiteLayout';
 import Header from '../../components/Header/Header';
-import TopBar from '../../components/Tables/TopBar/TopBar';
 import CapitalRow from '../../components/Tables/Capital/CapitalRow';
 
 const CapitalScreen = () => {
   const [data, setData] = useState([]);
-  const [keyword, setKeyword] = useState('');
 
   useEffect(() => {
     const dataArray = [
@@ -100,35 +98,20 @@ const CapitalScreen = () => {
     setData(dataArray);
   }, []);
 
-  const handleSearchValue = (e) => {
-    const { value } = e.target;
-
-    setKeyword(value);
-  };
-
-  const handleSearchSubmit = (e) => {
-    e.preventDefault();
-  };
-
   return (
     <SiteLayout>
       <Header icon='sort' title='Piyasa' />
-      <TopBar
-        searchValue={keyword}
-        searchOnChange={handleSearchValue}
-        searchSubmit={handleSearchSubmit}
-      />
 
       {data && data.length > 0 && (
         <table className='data-table'>
           <thead>
             <tr>
-              <th className='left'>Sıra</th>
+              <th className='left'>Rank</th>
               <th className='left'>Coin</th>
-              <th className='center'>Son fiyat</th>
-              <th className='center'>Değişim (24s)</th>
-              <th className='center responsive-hide2'>Hacim (24s)</th>
-              <th className='left responsive-hide'>Grafik</th>
+              <th className='center'>Last Price</th>
+              <th className='center'>Change (24h)</th>
+              <th className='center responsive-hide2'>Volume (24h)</th>
+              <th className='left responsive-hide'>Chart</th>
               <th aria-label='empty' className='right'>
                 &nbsp;
               </th>

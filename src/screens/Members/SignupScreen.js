@@ -48,6 +48,7 @@ const SignupScreen = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    // Handle form submission
   };
 
   return (
@@ -64,69 +65,69 @@ const SignupScreen = () => {
                     draggable='false'
                   />
                 </div>
-                <h1 className='form-title center'>Hesap oluşturma</h1>
+                <h1 className='form-title center'>Create an Account</h1>
                 <p className='form-desc center'>
-                  Lütfen aşağıdaki bilgileri girin. Aktivasyon bilgilerinizi telefon numaranıza
-                  göndereceğiz.
+                  Please enter the information below. We will send the activation details to your
+                  phone number.
                 </p>
                 <form className='form' onSubmit={handleSubmit} noValidate>
                   <div className='form-elements'>
                     <div className='form-line'>
                       <div className='full-width'>
-                        <label htmlFor='email'>E-posta adresiniz</label>
+                        <label htmlFor='email'>Your Email Address</label>
                         <FormInput
                           type='email'
                           name='email'
                           value={formValues.email}
-                          placeholder='E-posta adresinizi girin'
+                          placeholder='Enter your email address'
                           onChange={handleChange}
                         />
                       </div>
                     </div>
                     <div className='form-line'>
                       <div className='full-width'>
-                        <label htmlFor='password'>Şifreniz</label>
+                        <label htmlFor='password'>Your Password</label>
                         <FormInput
                           type='password'
                           name='password'
                           value={formValues.password}
-                          placeholder='Şifrenizi girin'
+                          placeholder='Enter your password'
                           onChange={handleChange}
                         />
                       </div>
                     </div>
                     <div className='form-line'>
                       <div className='full-width'>
-                        <label htmlFor='password1'>Şifrenizi doğrulayın</label>
+                        <label htmlFor='password1'>Confirm Your Password</label>
                         <FormInput
                           type='password'
                           name='password1'
                           value={formValues.password1}
-                          placeholder='Şifrenizi tekrar girin'
+                          placeholder='Re-enter your password'
                           onChange={handleChange}
                         />
                       </div>
                     </div>
                     <div className='form-line'>
                       <div className='full-width'>
-                        <label htmlFor='name'>Adınız</label>
+                        <label htmlFor='name'>Your First Name</label>
                         <FormInput
                           type='text'
                           name='name'
                           value={formValues.name}
-                          placeholder='Adınızı girin'
+                          placeholder='Enter your first name'
                           onChange={handleChange}
                         />
                       </div>
                     </div>
                     <div className='form-line'>
                       <div className='full-width'>
-                        <label htmlFor='lastname'>Soyadınız</label>
+                        <label htmlFor='lastname'>Your Last Name</label>
                         <FormInput
                           type='text'
                           name='lastname'
                           value={formValues.lastname}
-                          placeholder='Soyadınızı girin'
+                          placeholder='Enter your last name'
                           onChange={handleChange}
                         />
                       </div>
@@ -137,7 +138,7 @@ const SignupScreen = () => {
                         <FormCheckbox
                           name='citizenship'
                           checked={formValues.citizenship}
-                          text='Türkiye Cumhuriyeti vatandaşıyım.'
+                          text='I am a citizen of the Republic of Turkey.'
                           onChange={handleCheckboxChange}
                         />
                       </div>
@@ -145,18 +146,19 @@ const SignupScreen = () => {
 
                     <div className='form-line clearfix'>
                       <div className='half-width'>
-                        <label htmlFor='identityType'>Kimlik tipi</label>
-                        <select name='identityType' id='identityType'>
-                          <option value='1'>TC kimlik no</option>
+                        <label htmlFor='identityType'>Identity Type</label>
+                        <select name='identityType' id='identityType' onChange={handleChange}>
+                          <option value=''>Select Identity Type</option>
+                          <option value='1'>TC Identity No</option>
                         </select>
                       </div>
                       <div className='half-width'>
-                        <label htmlFor='identityNumber'>Kimlik numarası</label>
+                        <label htmlFor='identityNumber'>Identity Number</label>
                         <FormInput
                           type='text'
                           name='identityNumber'
                           value={formValues.identityNumber}
-                          placeholder='Kimlik numaranızı girin'
+                          placeholder='Enter your identity number'
                           onChange={handleChange}
                         />
                       </div>
@@ -164,36 +166,36 @@ const SignupScreen = () => {
 
                     <div className='form-line clearfix'>
                       <div className='three-width'>
-                        <label htmlFor='day'>Doğum tarihi</label>
-                        <select name='day' id='day'>
-                          <option value='1'>Gün</option>
+                        <label htmlFor='day'>Date of Birth</label>
+                        <select name='day' id='day' onChange={handleChange}>
+                          <option value=''>Day</option>
                         </select>
                       </div>
                       <div className='three-width'>
                         <label htmlFor='month'>&nbsp;</label>
-                        <select name='month' id='month'>
-                          <option value='1'>Ay</option>
+                        <select name='month' id='month' onChange={handleChange}>
+                          <option value=''>Month</option>
                         </select>
                       </div>
                       <div className='three-width'>
                         <label htmlFor='year'>&nbsp;</label>
-                        <select name='year' id='year'>
-                          <option value='1'>Yıl</option>
+                        <select name='year' id='year' onChange={handleChange}>
+                          <option value=''>Year</option>
                         </select>
                       </div>
                     </div>
 
                     <div className='form-line clearfix'>
                       <div className='three-width'>
-                        <label htmlFor='country'>Telefon</label>
-                        <select name='country' id='country'>
-                          <option value='1'>Ülke kodu</option>
+                        <label htmlFor='country'>Phone</label>
+                        <select name='country' id='country' onChange={handleChange}>
+                          <option value=''>Country Code</option>
                         </select>
                       </div>
                       <div className='three-width'>
                         <label htmlFor='operator'>&nbsp;</label>
-                        <select name='operator' id='operator'>
-                          <option value='1'>Operatör kodu</option>
+                        <select name='operator' id='operator' onChange={handleChange}>
+                          <option value=''>Operator Code</option>
                         </select>
                       </div>
                       <div className='three-width'>
@@ -202,7 +204,7 @@ const SignupScreen = () => {
                           type='text'
                           name='phone'
                           value={formValues.phone}
-                          placeholder='Telefon numaranızı girin'
+                          placeholder='Enter your phone number'
                           onChange={handleChange}
                         />
                       </div>
@@ -213,7 +215,7 @@ const SignupScreen = () => {
                         <FormCheckbox
                           name='agreeToPolicies1'
                           checked={formValues.agreeToPolicies1}
-                          text={`KVVK Aydınlatma Metni'ni okudum ve kullanıcı sözleşmesini kabul ediyorum.`}
+                          text='I have read and accept the KVVK Information Text and the user agreement.'
                           onChange={handleCheckboxChange}
                         />
                       </div>
@@ -223,7 +225,7 @@ const SignupScreen = () => {
                         <FormCheckbox
                           name='agreeToPolicies2'
                           checked={formValues.agreeToPolicies2}
-                          text={`KVVK Açık Rıza Metni'ni okudum, inceledim. Bu metin kapsamında kişisel verilerimin işlenmesi ve aktarılmasını onaylıyorum.`}
+                          text='I have read, reviewed and approve the KVVK Explicit Consent Text. I consent to the processing and transfer of my personal data within the scope of this text.'
                           onChange={handleCheckboxChange}
                         />
                       </div>
@@ -233,20 +235,20 @@ const SignupScreen = () => {
                         <FormCheckbox
                           name='agreeToPolicies3'
                           checked={formValues.agreeToPolicies3}
-                          text='Ürün ve hizmetlerle ilgili KVVK Aydınlatma Metni kapsamında e-posta, telefon ve elektronik iletişim kanalları yoluyla ticari elektronik iletiler almayı kabul ediyorum.'
+                          text='I accept to receive commercial electronic messages via email, phone, and electronic communication channels related to products and services within the scope of the KVVK Information Text.'
                           onChange={handleCheckboxChange}
                         />
                       </div>
                     </div>
                     <div className='form-line'>
                       <div className='buttons'>
-                        <FormButton type='submit' text='Hesap oluştur' onClick={handleSubmit} />
+                        <FormButton type='submit' text='Create Account' onClick={handleSubmit} />
                       </div>
                     </div>
                     <div className='form-line'>
                       <div className='center'>
                         <p>
-                          Hesabınız var mı? <Link to='/'>giriş yapın</Link>.
+                          Already have an account? <Link to='/'>Login</Link>.
                         </p>
                       </div>
                     </div>

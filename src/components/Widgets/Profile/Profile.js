@@ -14,7 +14,7 @@ const Profile = memo(() => {
     <Box>
       <div className='box-title box-vertical-padding box-horizontal-padding no-select'>
         <div className='flex flex-center flex-space-between'>
-          <p>Profilim</p>
+          <p>Profile</p>
           <button type='button' className='box-icon pointer' onClick={() => handleMenuOpen()}>
             <i className='material-icons'>more_vert</i>
           </button>

@@ -9,9 +9,9 @@ const NotFoundScreen = () => (
       className='logo-404'
     />
     <h1 className='title-404'>404</h1>
-    <p className='paragraph-404'>Crypto Exchange sunucusunda böyle bir sayfa bulunamadı.</p>
+    <p className='paragraph-404'>Such a page could not be found on the Crypto Exchange server.</p>
     <Link to='/' className='button button-purple button-medium'>
-      Ana sayfaya git
+      Go to the homepage
     </Link>
   </div>
 );

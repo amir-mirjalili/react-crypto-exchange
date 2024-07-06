@@ -3,11 +3,10 @@ import Header from '../../components/Header/Header';
 
 import Box from '../../components/Common/Box';
 import BankProcess from '../../components/Widgets/BankProcess/BankProcess';
-import RecentActivity from '../../components/Widgets/RecentActivity/RecentActivity';
 
 const DashboardScreen = () => (
   <SiteLayout>
-    <Header icon='sort' title='Yatır-çek' />
+    <Header icon='sort' title='Deposit-Withdraw' />
     <div className='flex flex-destroy flex-space-between'>
       <div className='flex-1 box-right-padding'>
         <BankProcess />
@@ -16,64 +15,62 @@ const DashboardScreen = () => (
         <Box>
           <div className='box-title box-vertical-padding box-horizontal-padding no-select'>
             <div className='flex flex-center flex-space-between'>
-              <p>Önemli</p>
+              <p>Important</p>
             </div>
           </div>
           <div className='box-content box-text box-horizontal-padding box-content-height-nobutton'>
             <p>
-              &bull; EFT transferlerinde alıcı/lehdar kısmına Crypto Exchange yazılması
-              gerekmektedir.
+              &bull; In EFT transfers, the recipient/beneficiary section must include Crypto
+              Exchange.
             </p>
             <p>
-              &bull; Adınıza açılmış olan tüm bireysel, vadesiz, Türk Lirası hesaplarınızdan,
-              listelenen hesaplara Havale/EFT işlemi gerçekleştirebilirsiniz. Farklı kişiye ait
-              hesaplardan yapılan gönderimler kabul edilmeyecektir.
+              &bull; You can perform transfer/EFT transactions from all your individual, demand
+              deposit, Turkish Lira accounts opened in your name to the listed accounts. Transfers
+              from accounts belonging to different individuals will not be accepted.
             </p>
             <p>
-              &bull; ATM kullanılarak yapılan transferler (kartlı/kartsız), gönderici bilgilerini
-              teyit etmek mümkün olmadığı için kabul edilmeyecektir.
+              &bull; Transfers made using ATMs (with or without a card) will not be accepted as it
+              is not possible to verify the sender's information.
             </p>
             <p>
-              &bull; Gönderdiğiniz miktar kontrollerin ardından sistem tarafından otomatik olarak
-              hesabınıza yansıtılacaktır, ayrıca bir bildirimde bulunmanıza gerek yoktur.
+              &bull; The amount you sent will be automatically reflected in your account by the
+              system after verification, and there is no need to notify separately.
             </p>
             <p>
-              &bull; Kimlik doğrulama işleminizi tamamladığınız için açıklama kısmına sabit yatırma
-              kodu girmeniz gerekmemektedir.
+              &bull; Since you have completed the identity verification process, you do not need to
+              enter a fixed deposit code in the explanation section.
             </p>
           </div>
         </Box>
       </div>
     </div>
     <div className='flex flex-destroy flex-space-between'>
-      <div className='flex-1 box-right-padding'>
-        <RecentActivity />
-      </div>
       <div className='flex-1'>
         <Box>
           <div className='box-title box-vertical-padding box-horizontal-padding no-select'>
             <div className='flex flex-center flex-space-between'>
-              <p>Önemli</p>
+              <p>Important</p>
             </div>
           </div>
           <div className='box-content box-text box-horizontal-padding box-content-height-nobutton'>
             <p>
-              &bull; Adınıza açılmış (bireysel, vadesiz, TL) tüm banka hesaplarınıza çekim
-              yapabilirsiniz. Farklı bir kişiye transfer işleminiz gerçekleşmeyecektir.
+              &bull; You can make withdrawals to all bank accounts (individual, demand deposit, TL)
+              opened in your name. Transfers to accounts belonging to different individuals will not
+              be processed.
             </p>
-            <p>&bull; Minimum çekim tutarı 10 TL&apos;dir.</p>
-            <p>&bull; Çekim işlemi sırasında 3 TL işlem ücreti tahsil edilir.</p>
+            <p>&bull; The minimum withdrawal amount is 10 TL.</p>
+            <p>&bull; A transaction fee of 3 TL is charged during the withdrawal process.</p>
             <p>
-              &bull; Bir çekim talimatı verdiğinizde bu tutar kullanılabilir bakiyenizden
-              düşecektir.
-            </p>
-            <p>
-              &bull; Henüz gerçekleşmemiş talimatlarınızı iptal edebilirsiniz. Bu durumda talimat
-              tutarı tekrar kullanılabilir bakiyenize aktarılır.
+              &bull; When you give a withdrawal order, this amount will be deducted from your
+              available balance.
             </p>
             <p>
-              &bull; Bankaların mesai saatleri dışında verilen çekim talimatları, bankaların mesaiye
-              başlaması ile birlikte işleme alınır.
+              &bull; You can cancel pending orders. In this case, the order amount will be
+              re-credited to your available balance.
+            </p>
+            <p>
+              &bull; Withdrawal orders given outside of banking hours will be processed as soon as
+              banks resume operations.
             </p>
           </div>
         </Box>

@@ -22,6 +22,7 @@ const ForgotScreen = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    // Handle form submission
   };
 
   return (
@@ -38,39 +39,40 @@ const ForgotScreen = () => {
                     draggable='false'
                   />
                 </div>
-                <h1 className='form-title center'>Şifre sıfırlama</h1>
+                <h1 className='form-title center'>Password Reset</h1>
                 <p className='form-desc center'>
-                  Lütfen kayıtlı telefon numaranızı giriniz. Şifre sıfırlama bilgilerinizi
-                  göndereceğiz.
+                  Please enter your registered phone number. We will send you the password reset
+                  information.
                 </p>
                 <form className='form' onSubmit={handleSubmit} noValidate>
                   <div className='form-elements'>
                     <div className='form-line'>
                       <div className='full-width'>
-                        <label htmlFor='phone'>Telefon numaranız</label>
+                        <label htmlFor='phone'>Your Phone Number</label>
                         <FormInput
                           type='text'
                           name='phone'
                           value={formValues.phone}
-                          placeholder='Telefon numaranızı girin'
+                          placeholder='Enter your phone number'
                           onChange={handleChange}
                         />
                       </div>
                     </div>
                     <div className='form-line'>
                       <div className='full-width right'>
-                        <Link to='/'>Giriş yap</Link>
+                        <Link to='/'>Login</Link>
                       </div>
                     </div>
                     <div className='form-line'>
                       <div className='buttons'>
-                        <FormButton type='submit' text='Gönder' onClick={handleSubmit} />
+                        <FormButton type='submit' text='Send' onClick={handleSubmit} />
                       </div>
                     </div>
                     <div className='form-line'>
                       <div className='center'>
                         <p>
-                          Hesabınız yoksa <Link to='/members/signup'>yeni hesap</Link> oluşturun.
+                          If you don't have an account,{' '}
+                          <Link to='/members/signup'>create a new one</Link>.
                         </p>
                       </div>
                     </div>

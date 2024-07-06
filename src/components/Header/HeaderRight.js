@@ -16,43 +16,6 @@ const HeaderRight = memo(() => {
               Market
             </Link>
           </li>
-          <li>
-            <Link
-              to='/data'
-              className={location.pathname.toLowerCase().includes('/data') ? 'active' : 'passive'}
-            >
-              Veri
-            </Link>
-          </li>
-          <li>
-            <Link
-              to='/docs'
-              className={location.pathname.toLowerCase().includes('/docs') ? 'active' : 'passive'}
-            >
-              Doküman
-            </Link>
-          </li>
-          <li>
-            <Link
-              to='/api'
-              className={location.pathname.toLowerCase().includes('/api') ? 'active' : 'passive'}
-            >
-              API
-            </Link>
-          </li>
-        </ul>
-        <ul className='header-icons nowrap'>
-          <li>
-            <Link to='/search'>
-              <i className='material-icons'>search</i>
-            </Link>
-          </li>
-          <li>
-            <Link to='/members/notifications'>
-              <span className='notification-badge'>23</span>
-              <i className='material-icons'>notifications</i>
-            </Link>
-          </li>
         </ul>
         <ul className='header-user nowrap'>
           <li>

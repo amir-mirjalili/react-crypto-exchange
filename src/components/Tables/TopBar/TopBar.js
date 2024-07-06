@@ -21,17 +21,6 @@ const TopBar = memo(({ searchValue, searchOnChange, searchSubmit }) => (
         </form>
       </div>
     </div>
-    <div>
-      <button type='button' className='button button-white button-large'>
-        <i className='material-icons button-icon-left'>event</i>
-        Periyod
-        <i className='material-icons button-icon-right'>keyboard_arrow_down</i>
-      </button>
-      <button type='button' className='button button-purple button-large'>
-        <i className='material-icons button-icon-left'>download</i>
-        CSV indir
-      </button>
-    </div>
   </div>
 ));
 

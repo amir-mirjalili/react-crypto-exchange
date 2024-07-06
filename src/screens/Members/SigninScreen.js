@@ -43,51 +43,52 @@ const SigninScreen = () => {
                     draggable='false'
                   />
                 </div>
-                <h1 className='form-title center'>Üye girişi</h1>
+                <h1 className='form-title center'>Member Login</h1>
                 <p className='form-desc center'>
-                  Lütfen tarayıcınızın adres çubuğunda{' '}
-                  <strong>https://pro.cryptoexchange.com</strong> yazdığından emin olunuz.
+                  Please ensure that <strong>https://pro.cryptoexchange.com</strong> is written in
+                  your browser's address bar.
                 </p>
                 <form className='form' onSubmit={handleSubmit} noValidate>
                   <div className='form-elements'>
                     <div className='form-line'>
                       <div className='full-width'>
-                        <label htmlFor='phone'>Telefon numaranız</label>
+                        <label htmlFor='phone'>Your Phone Number</label>
                         <FormInput
                           type='text'
                           name='phone'
                           value={formValues.phone}
-                          placeholder='Telefon numaranızı girin'
+                          placeholder='Enter your phone number'
                           onChange={handleChange}
                         />
                       </div>
                     </div>
                     <div className='form-line'>
                       <div className='full-width'>
-                        <label htmlFor='password'>Şifreniz</label>
+                        <label htmlFor='password'>Your Password</label>
                         <FormInput
                           type='password'
                           name='password'
                           value={formValues.password}
-                          placeholder='Şifrenizi girin'
+                          placeholder='Enter your password'
                           onChange={handleChange}
                         />
                       </div>
                     </div>
                     <div className='form-line'>
                       <div className='full-width right'>
-                        <Link to='/members/forgot-password'>Şifremi unuttum</Link>
+                        <Link to='/members/forgot-password'>Forgot Password</Link>
                       </div>
                     </div>
                     <div className='form-line'>
                       <div className='buttons'>
-                        <FormButton type='submit' text='Giriş yap' onClick={handleSubmit} />
+                        <FormButton type='submit' text='Login' onClick={handleSubmit} />
                       </div>
                     </div>
                     <div className='form-line'>
                       <div className='center'>
                         <p>
-                          Hesabınız yoksa <Link to='/members/signup'>yeni hesap</Link> oluşturun.
+                          If you don't have an account,{' '}
+                          <Link to='/members/signup'>create a new one</Link>.
                         </p>
                       </div>
                     </div>

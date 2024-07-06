@@ -2,12 +2,10 @@ import { useState, useEffect } from 'react';
 
 import SiteLayout from '../../layouts/SiteLayout';
 import Header from '../../components/Header/Header';
-import TopBar from '../../components/Tables/TopBar/TopBar';
 import TransactionRow from '../../components/Tables/Transactions/TransactionRow';
 
 const TransactionsScreen = () => {
   const [data, setData] = useState([]);
-  const [keyword, setKeyword] = useState('');
 
   useEffect(() => {
     const dataArray = [
@@ -32,7 +30,7 @@ const TransactionsScreen = () => {
         from: 'Tarık',
         to: 'Cenk',
         toPicture: 'https://www.cenksari.com/content/profile.jpg',
-        coin: 'Etherium',
+        coin: 'Ethereum',
         icon: 'https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/1024/Ethereum-ETH-icon.png',
         amount: '3.000',
         status: 2,
@@ -55,24 +53,9 @@ const TransactionsScreen = () => {
     setData(dataArray);
   }, []);
 
-  const handleSearchValue = (e) => {
-    const { value } = e.target;
-
-    setKeyword(value);
-  };
-
-  const handleSearchSubmit = (e) => {
-    e.preventDefault();
-  };
-
   return (
     <SiteLayout>
-      <Header icon='sort' title='İşlemler' />
-      <TopBar
-        searchValue={keyword}
-        searchOnChange={handleSearchValue}
-        searchSubmit={handleSearchSubmit}
-      />
+      <Header icon='sort' title='Transactions' />
 
       {data && data.length > 0 && (
         <table className='data-table'>
@@ -81,13 +64,13 @@ const TransactionsScreen = () => {
               <th aria-label='empty' className='left'>
                 &nbsp;
               </th>
-              <th className='left responsive-hide'>İşlem</th>
-              <th className='left responsive-hide'>Tarih</th>
-              <th className='left'>Kimden</th>
-              <th className='left'>Kime</th>
+              <th className='left responsive-hide'>Transaction</th>
+              <th className='left responsive-hide'>Date</th>
+              <th className='left'>From</th>
+              <th className='left'>To</th>
               <th className='left'>Coin</th>
-              <th className='center'>Miktar</th>
-              <th className='center'>Durum</th>
+              <th className='center'>Amount</th>
+              <th className='center'>Status</th>
             </tr>
           </thead>
           <tbody>
