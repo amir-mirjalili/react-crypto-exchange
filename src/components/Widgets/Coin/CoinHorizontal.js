@@ -55,6 +55,7 @@ const CoinHorizontal = memo(({ item, searchValue, searchOnChange, searchSubmit }
 ));
 
 CoinHorizontal.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
   item: PropTypes.object.isRequired,
   searchValue: PropTypes.string.isRequired,
   searchSubmit: PropTypes.func.isRequired,

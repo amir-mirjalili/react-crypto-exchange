@@ -11,73 +11,73 @@ const BuyOrders = memo(() => {
     const dataArray = [
       {
         id: 1,
-        price: '82,03',
-        amount: '0,15',
-        total: '237,31',
+        price: '82.03',
+        amount: '0.15',
+        total: '237.31',
         currency: 'TRY',
         type: 1,
       },
       {
         id: 2,
-        price: '82,03',
-        amount: '0,15',
-        total: '237,31',
+        price: '82.03',
+        amount: '0.15',
+        total: '237.31',
         currency: 'TRY',
         type: 1,
       },
       {
         id: 3,
-        price: '82,03',
-        amount: '0,15',
-        total: '237,31',
+        price: '82.03',
+        amount: '0.15',
+        total: '237.31',
         currency: 'TRY',
         type: 3,
       },
       {
         id: 4,
-        price: '82,03',
-        amount: '0,15',
-        total: '237,31',
+        price: '82.03',
+        amount: '0.15',
+        total: '237.31',
         currency: 'TRY',
         type: 3,
       },
       {
         id: 5,
-        price: '82,03',
-        amount: '0,15',
-        total: '237,31',
+        price: '82.03',
+        amount: '0.15',
+        total: '237.31',
         currency: 'TRY',
         type: 2,
       },
       {
         id: 6,
-        price: '82,03',
-        amount: '0,15',
-        total: '237,31',
+        price: '82.03',
+        amount: '0.15',
+        total: '237.31',
         currency: 'TRY',
         type: 1,
       },
       {
         id: 7,
-        price: '82,03',
-        amount: '0,15',
-        total: '237,31',
+        price: '82.03',
+        amount: '0.15',
+        total: '237.31',
         currency: 'TRY',
         type: 2,
       },
       {
         id: 8,
-        price: '82,03',
-        amount: '0,15',
-        total: '237,31',
+        price: '82.03',
+        amount: '0.15',
+        total: '237.31',
         currency: 'TRY',
         type: 3,
       },
       {
         id: 9,
-        price: '82,03',
-        amount: '0,15',
-        total: '237,31',
+        price: '82.03',
+        amount: '0.15',
+        total: '237.31',
         currency: 'TRY',
         type: 3,
       },
@@ -94,7 +94,7 @@ const BuyOrders = memo(() => {
     <Box>
       <div className='box-title box-vertical-padding box-horizontal-padding no-select'>
         <div className='flex flex-center flex-space-between'>
-          <p>Alış emirleri</p>
+          <p>Buy Orders</p>
           <button type='button' className='box-icon pointer' onClick={() => handleMenuOpen()}>
             <i className='material-icons'>more_vert</i>
           </button>
@@ -131,9 +131,9 @@ const BuyOrders = memo(() => {
             <table>
               <thead>
                 <tr>
-                  <th className='left no-select'>Fiyat</th>
-                  <th className='center no-select'>Tutar</th>
-                  <th className='right no-select'>Toplam</th>
+                  <th className='left no-select'>Price</th>
+                  <th className='center no-select'>Amount</th>
+                  <th className='right no-select'>Total</th>
                 </tr>
               </thead>
               <tbody>

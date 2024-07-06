@@ -4,7 +4,6 @@ import MainLayout from '../../layouts/MainLayout';
 import Header from '../../components/Header/Header';
 
 import Market from '../../components/Widgets/Market/Market';
-import BuySell from '../../components/Widgets/BuySell/BuySell';
 import BuyOrders from '../../components/Widgets/BuyOrders/BuyOrders';
 import SellOrders from '../../components/Widgets/SellOrders/SellOrders';
 import TradeHistory from '../../components/Widgets/TradeHistory/TradeHistory';
@@ -67,9 +66,6 @@ const MarketScreen = () => {
             <div className='flex flex-destroy'>
               <div className='content-70 flex-1 box-right-padding'>
                 <CandleStick />
-              </div>
-              <div className='content-30'>
-                <BuySell />
               </div>
             </div>
 
