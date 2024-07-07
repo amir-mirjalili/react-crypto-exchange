@@ -24,13 +24,13 @@ const DashboardScreen = () => (
               Exchange.
             </p>
             <p>
-              &bull; You can perform transfer/EFT transactions from all your individual, demand
-              deposit, Turkish Lira accounts opened in your name to the listed accounts. Transfers
+              &bull;You can perform transfer/EFT transactions from all your individual, demand
+              deposit, Iranian Rial accounts opened in your name to the listed accounts. Transfers
               from accounts belonging to different individuals will not be accepted.
             </p>
             <p>
               &bull; Transfers made using ATMs (with or without a card) will not be accepted as it
-              is not possible to verify the sender's information.
+              is not possible to verify the senders information.
             </p>
             <p>
               &bull; The amount you sent will be automatically reflected in your account by the
@@ -54,12 +54,12 @@ const DashboardScreen = () => (
           </div>
           <div className='box-content box-text box-horizontal-padding box-content-height-nobutton'>
             <p>
-              &bull; You can make withdrawals to all bank accounts (individual, demand deposit, TL)
+              &bull; You can make withdrawals to all bank accounts (individual, demand deposit, IRR)
               opened in your name. Transfers to accounts belonging to different individuals will not
               be processed.
             </p>
-            <p>&bull; The minimum withdrawal amount is 10 TL.</p>
-            <p>&bull; A transaction fee of 3 TL is charged during the withdrawal process.</p>
+            <p>&bull; The minimum withdrawal amount is 10 IRR.</p>
+            <p>&bull; A transaction fee of 3 IRR is charged during the withdrawal process.</p>
             <p>
               &bull; When you give a withdrawal order, this amount will be deducted from your
               available balance.

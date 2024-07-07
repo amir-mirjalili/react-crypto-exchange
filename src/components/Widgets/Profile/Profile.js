@@ -1,5 +1,4 @@
 import { memo, useState } from 'react';
-import { Link } from 'react-router-dom';
 
 import Box from '../../Common/Box';
 
@@ -53,7 +52,7 @@ const Profile = memo(() => {
               <div
                 className='icon cover pointer'
                 style={{
-                  backgroundImage: `url('https://www.cenksari.com/content/profile.jpg')`,
+                  backgroundImage: `url('/images/IMG_1515.JPG')`,
                 }}
               />
               <div className='edit pointer'>
@@ -64,10 +63,7 @@ const Profile = memo(() => {
         </div>
         <div className='box-horizontal-padding'>
           <div className='center'>
-            <h3>Cenk SARI</h3>
-            <strong>Seviye 1</strong>
-            <p>Limitlerinizi arttırmak için seviye 2 olmalısınız.</p>
-            <Link to='/members/application'>Seviye 2 başvuru</Link>
+            <h3>Amir Mirjalili</h3>
           </div>
         </div>
       </div>

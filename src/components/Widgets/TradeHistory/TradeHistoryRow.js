@@ -7,7 +7,7 @@ const TradeHistoryRow = memo(({ item }) => (
       {item.amount} {item.currency}
     </td>
     <td className='center'>{item.weight}</td>
-    <td className='center'>{item.type === 1 ? 'ALIŞ' : 'SATIŞ'}</td>
+    <td className='center'>{item.type === 1 ? 'Amir' : 'Ali'}</td>
     <td className='right'>{item.time}</td>
   </tr>
 ));

@@ -133,73 +133,9 @@ const SignupScreen = () => {
                       </div>
                     </div>
 
-                    <div className='form-line'>
+                    <div className='form-line clearfix'>
                       <div className='full-width'>
-                        <FormCheckbox
-                          name='citizenship'
-                          checked={formValues.citizenship}
-                          text='I am a citizen of the Republic of Turkey.'
-                          onChange={handleCheckboxChange}
-                        />
-                      </div>
-                    </div>
-
-                    <div className='form-line clearfix'>
-                      <div className='half-width'>
-                        <label htmlFor='identityType'>Identity Type</label>
-                        <select name='identityType' id='identityType' onChange={handleChange}>
-                          <option value=''>Select Identity Type</option>
-                          <option value='1'>TC Identity No</option>
-                        </select>
-                      </div>
-                      <div className='half-width'>
-                        <label htmlFor='identityNumber'>Identity Number</label>
-                        <FormInput
-                          type='text'
-                          name='identityNumber'
-                          value={formValues.identityNumber}
-                          placeholder='Enter your identity number'
-                          onChange={handleChange}
-                        />
-                      </div>
-                    </div>
-
-                    <div className='form-line clearfix'>
-                      <div className='three-width'>
-                        <label htmlFor='day'>Date of Birth</label>
-                        <select name='day' id='day' onChange={handleChange}>
-                          <option value=''>Day</option>
-                        </select>
-                      </div>
-                      <div className='three-width'>
-                        <label htmlFor='month'>&nbsp;</label>
-                        <select name='month' id='month' onChange={handleChange}>
-                          <option value=''>Month</option>
-                        </select>
-                      </div>
-                      <div className='three-width'>
-                        <label htmlFor='year'>&nbsp;</label>
-                        <select name='year' id='year' onChange={handleChange}>
-                          <option value=''>Year</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div className='form-line clearfix'>
-                      <div className='three-width'>
-                        <label htmlFor='country'>Phone</label>
-                        <select name='country' id='country' onChange={handleChange}>
-                          <option value=''>Country Code</option>
-                        </select>
-                      </div>
-                      <div className='three-width'>
-                        <label htmlFor='operator'>&nbsp;</label>
-                        <select name='operator' id='operator' onChange={handleChange}>
-                          <option value=''>Operator Code</option>
-                        </select>
-                      </div>
-                      <div className='three-width'>
-                        <label htmlFor='phone'>&nbsp;</label>
+                        <label htmlFor='phone'>Phone Number</label>
                         <FormInput
                           type='text'
                           name='phone'
@@ -215,27 +151,7 @@ const SignupScreen = () => {
                         <FormCheckbox
                           name='agreeToPolicies1'
                           checked={formValues.agreeToPolicies1}
-                          text='I have read and accept the KVVK Information Text and the user agreement.'
-                          onChange={handleCheckboxChange}
-                        />
-                      </div>
-                    </div>
-                    <div className='form-line'>
-                      <div className='full-width'>
-                        <FormCheckbox
-                          name='agreeToPolicies2'
-                          checked={formValues.agreeToPolicies2}
-                          text='I have read, reviewed and approve the KVVK Explicit Consent Text. I consent to the processing and transfer of my personal data within the scope of this text.'
-                          onChange={handleCheckboxChange}
-                        />
-                      </div>
-                    </div>
-                    <div className='form-line'>
-                      <div className='full-width'>
-                        <FormCheckbox
-                          name='agreeToPolicies3'
-                          checked={formValues.agreeToPolicies3}
-                          text='I accept to receive commercial electronic messages via email, phone, and electronic communication channels related to products and services within the scope of the KVVK Information Text.'
+                          text='I have read and accept the user agreement.'
                           onChange={handleCheckboxChange}
                         />
                       </div>

@@ -14,7 +14,7 @@ const BuyOrders = memo(() => {
         price: '82.03',
         amount: '0.15',
         total: '237.31',
-        currency: 'TRY',
+        currency: 'USD',
         type: 1,
       },
       {
@@ -22,7 +22,7 @@ const BuyOrders = memo(() => {
         price: '82.03',
         amount: '0.15',
         total: '237.31',
-        currency: 'TRY',
+        currency: 'USD',
         type: 1,
       },
       {
@@ -30,7 +30,7 @@ const BuyOrders = memo(() => {
         price: '82.03',
         amount: '0.15',
         total: '237.31',
-        currency: 'TRY',
+        currency: 'USD',
         type: 3,
       },
       {
@@ -38,7 +38,7 @@ const BuyOrders = memo(() => {
         price: '82.03',
         amount: '0.15',
         total: '237.31',
-        currency: 'TRY',
+        currency: 'USD',
         type: 3,
       },
       {
@@ -46,7 +46,7 @@ const BuyOrders = memo(() => {
         price: '82.03',
         amount: '0.15',
         total: '237.31',
-        currency: 'TRY',
+        currency: 'USD',
         type: 2,
       },
       {
@@ -54,7 +54,7 @@ const BuyOrders = memo(() => {
         price: '82.03',
         amount: '0.15',
         total: '237.31',
-        currency: 'TRY',
+        currency: 'USD',
         type: 1,
       },
       {
@@ -62,7 +62,7 @@ const BuyOrders = memo(() => {
         price: '82.03',
         amount: '0.15',
         total: '237.31',
-        currency: 'TRY',
+        currency: 'USD',
         type: 2,
       },
       {
@@ -70,7 +70,7 @@ const BuyOrders = memo(() => {
         price: '82.03',
         amount: '0.15',
         total: '237.31',
-        currency: 'TRY',
+        currency: 'USD',
         type: 3,
       },
       {
@@ -78,7 +78,7 @@ const BuyOrders = memo(() => {
         price: '82.03',
         amount: '0.15',
         total: '237.31',
-        currency: 'TRY',
+        currency: 'USD',
         type: 3,
       },
     ];

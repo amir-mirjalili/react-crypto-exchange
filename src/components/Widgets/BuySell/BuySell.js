@@ -113,7 +113,7 @@ const BuySell = memo(() => {
                   </div>
                   <div className='right'>
                     <input type='text' id='f' name='f' placeholder='0' />
-                    <strong>TRY</strong>
+                    <strong>USD</strong>
                   </div>
                 </div>
                 <div className='buy-sell-line flex flex-center flex-space-between no-select'>
@@ -176,7 +176,7 @@ const BuySell = memo(() => {
                   </div>
                   <div className='right'>
                     <input type='text' id='s' name='s' placeholder='0' />
-                    <strong>TRY</strong>
+                    <strong>USD</strong>
                   </div>
                 </div>
                 <div className='buy-sell-line flex flex-center flex-space-between no-select'>
@@ -191,7 +191,7 @@ const BuySell = memo(() => {
                   </div>
                   <div className='right'>
                     <input type='text' id='l' name='l' placeholder='0' />
-                    <strong>TRY</strong>
+                    <strong>USD</strong>
                   </div>
                 </div>
                 <div className='buy-sell-line flex flex-center flex-space-between no-select'>

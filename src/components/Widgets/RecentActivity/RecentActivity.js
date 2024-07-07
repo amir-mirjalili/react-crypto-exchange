@@ -13,7 +13,7 @@ const RecentActivity = memo(() => {
         type: 1,
         time: '06:25:57',
         amount: '212,50',
-        currency: 'TRY',
+        currency: 'USD',
         status: 1,
       },
       {
@@ -21,7 +21,7 @@ const RecentActivity = memo(() => {
         type: 1,
         time: '08:30:25',
         amount: '1.465,85',
-        currency: 'TRY',
+        currency: 'USD',
         status: 1,
       },
       {
@@ -29,7 +29,7 @@ const RecentActivity = memo(() => {
         type: 2,
         time: '09:16:11',
         amount: '6.000,00',
-        currency: 'TRY',
+        currency: 'USD',
         status: 2,
       },
       {
@@ -37,7 +37,7 @@ const RecentActivity = memo(() => {
         type: 1,
         time: '12:05:03',
         amount: '2.225,35',
-        currency: 'TRY',
+        currency: 'USD',
         status: 1,
       },
       {
@@ -45,7 +45,7 @@ const RecentActivity = memo(() => {
         type: 1,
         time: '14:46:53',
         amount: '128,01',
-        currency: 'TRY',
+        currency: 'USD',
         status: 3,
       },
       {
@@ -53,7 +53,7 @@ const RecentActivity = memo(() => {
         type: 2,
         time: '18:01:03',
         amount: '350,00',
-        currency: 'TRY',
+        currency: 'USD',
         status: 2,
       },
     ];

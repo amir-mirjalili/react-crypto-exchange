@@ -20,8 +20,8 @@ const HeaderRight = memo(() => {
         <ul className='header-user nowrap'>
           <li>
             <Link to='/members'>
-              <span>Cenk SARI</span>
-              <span>@cenksari</span>
+              <span>Amir</span>
+              <span>@amir</span>
             </Link>
           </li>
           <li>
@@ -29,7 +29,7 @@ const HeaderRight = memo(() => {
               <div
                 className='profile-picture cover'
                 style={{
-                  backgroundImage: `url('https://www.cenksari.com/content/profile.jpg')`,
+                  backgroundImage: `url('/images/IMG_1515.JPG')`,
                 }}
               />
             </Link>
